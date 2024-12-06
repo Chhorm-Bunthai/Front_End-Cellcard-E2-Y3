@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="collapse navbar-collapse" id="navbarScroll">
         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
           <li class="nav-item">
-            <a class="nav-link" id="home-link" href="">Home</a>
+            <a class="nav-link" id="home-link" href="/index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="register-link" href="src/pages/registerPage.html">Register</a>
+            <a class="nav-link" id="register-link" href="/src/pages/registerPage.html">Register</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" id="download-link" href="">Download</a>
