@@ -1,43 +1,615 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cellcard Guideline Website</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-    />
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <link rel="stylesheet" href="/style/home.css" />
-  </head>
-  <body>
-    <!-- Header -->
-    <header></header>
+  <title>Cellcard App</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <!-- Feature -->
-    <section></section>
-    <section>
-      <h1>Home Page</h1>
+  <!-- Favicons -->
+  <link href="assets/img/faviconCellcard.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="./style/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style/home.css">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img  src="assets/img/logo-for-reach-02-1.png" alt="">
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">4</span>
+          </a><!-- End Notification Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have 4 new notifications
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>Lorem Ipsum</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>30 min. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4>Atque rerum nesciunt</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>1 hr. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>Sit rerum fuga</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>2 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-info-circle text-primary"></i>
+              <div>
+                <h4>Dicta reprehenderit</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>4 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show all notifications</a>
+            </li>
+
+          </ul><!-- End Notification Dropdown Items -->
+
+        </li><!-- End Notification Nav -->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-left-text"></i>
+            <span class="badge bg-success badge-number">3</span>
+          </a><!-- End Messages Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              You have 3 new messages
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Maria Hudson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Anna Nelson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>6 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>David Muldon</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>8 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="dropdown-footer">
+              <a href="#">Show all messages</a>
+            </li>
+
+          </ul><!-- End Messages Dropdown Items -->
+
+        </li><!-- End Messages Nav -->
+
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Cellcard OverView</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+          <i class="ri-install-line"></i><span>Installment</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Download</span>
+            </a>
+          </li>
+          <li>
+            <a href="./src/pages/registerPage.html">
+              <i class="bi bi-circle"></i><span>Rigister</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Login</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Components Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-journal-text"></i><span>View Plan</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Check Balance</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Subscription</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Forms Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-layout-text-window-reverse"></i><span>Top Up</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Top Up for own number</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Top Up for other number</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Schedule for top up</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Tables Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+          <i class="ri-chat-history-line"></i><span>Usage Histroy</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Optional</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Charts Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+          <i class="ri-customer-service-2-line"></i><span>Customer Support</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="icons-bootstrap.html">
+              <i class="bi bi-circle"></i><span>Optional</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <!-- End Icons Nav -->
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+     <!-- Banner -->
+  <section style="margin-bottom: 10rem; background-image: url(../assets/img/Rectangle-6.jpg);"  class="section_elementor">
+    <div class="container text-center">
+      <div style="padding-bottom: 30px;" class="row">
+
+        <div  class="col-15">
+          <span class="b_headline1">Faster, Better, Easier</span>
+        </div>
+      </div>
+      <div style="padding-bottom: 30px;" class="row">
+        <div class="col-15">
+          <span class="b_headline2">We are here to provide you the best user experience Guideline!</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-15">
+          <div class="d-grid gap-2 d-md-block">
+          </div>
+        </div>
+      </div>
+      <div class="container text-center">
+        <div class="row justify-content-md-center">
+          <div class="col col-lg-2">
+            <button  class="ripple">Explore&nbsp;Plans</button>
+          </div>
+          <div class="col-md-auto">
+          </div>
+          <div class="col col-lg-2">
+            <button class="ripple">Get&nbsp;Started</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-15">
+          <img src="./assets/img/banner1.jpg" class="img-fluid" alt="...">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Feature icon-->
+  <section class="sec_info">
+    <div class="auto-container">
+      <div class="row">
+          <div class="col-lg-6 col-md-8 col-12 text-center mx-auto mb-5">
+                  <h4 style="color: #555; font-size: 18px;">Features</h4>
+                  <div class="dec">Start with Cellcard App!</div>
+          </div>
+      </div>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <img src="./assets/img/img4.png" class="img-fluid" alt="...">
+            </div>
+            <div class="col">
+              <img src="./assets/img/img5.png" class="img-fluid" alt="...">
+            </div>
+            <div class="col">
+              <img src="./assets/img/img6.png" class="img-fluid" alt="...">
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!--certification-->
+  <section class="sec_certi py-5">
+    <div class="container text-center">
+      <h2 style="font-weight: 800;" class="mb-4">Everything You Need to Know To Start Up With Cellcard</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="p-4 bg-white rounded shadow-sm">
+            <div class="icon mb-3">
+              <img src="./assets/img/icon4.jpeg" alt="Digital Advertising Icon">
+            </div>
+            <h4 class="fw-bold">Easy Top Up</h4>
+            <p class="text-muted">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure.</p>
+            <a href="#" class="text-decoration-none fw-bold">Learn More →</a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="p-4 bg-white rounded shadow-sm">
+            <div class="icon mb-3">
+              <img src="./assets/img/icon2.png" alt="SEO Icon">
+            </div>
+            <h4 class="fw-bold">Get Support 24/7</h4>
+            <p class="text-muted">The moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensure and equal blame belongs through weakness.</p>
+            <a href="#" class="text-decoration-none fw-bold">Learn More →</a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="p-4 bg-white rounded shadow-sm">
+            <div class="icon mb-3">
+              <img src="./assets/img/icon3.jpg" alt="Social Media Icon">
+            </div>
+            <h4 class="fw-bold">Manage Subscription</h4>
+            <p class="text-muted">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure.</p>
+            <a href="#" class="text-decoration-none fw-bold">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing-section">
+    <h2 style="font-size: 38px; font-weight: 800;">Choose the Perfect Plan for You</h2>
+    <p>Flexible, Affordable, and Unlimited Options for Everyone</p>
+    <div class="pricing-container">
+      <img src="./assets/img/img14.png" class="img-fluid" alt="...">
+    </div>
+  </section>
+  
+
+
+  <section style="background-image: url(./assets/img/Rectangle-6.jpg);" class="process-section py-5">
+    <div class="container">
+      <!-- Upper Content -->
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6 text-center text-lg-start">
+          <img src="./assets/img/img7.jpg" alt="Illustration of a person reading under a tree" class="img-fluid rounded">
+        </div>
+        <div class="col-lg-6">
+          <h2 class="mb-3">Enjoy High Quality Calls via VoLTE</h2>
+          <p class="text-muted mb-4">
+            That’s why there’s Serey+ for everyone! Whether you’re a gamer, music lover, movie buff, social media addict, it’s time to enjoy Serey+. With Cellcard Serey+, enjoy the freedom of having your data and using it the way you want to, plus save all unused data with Serey+ Rollover.
+          </p>
+          <ul class="list-unstyled">
+            <li class="mb-2">✔ Customers can subscribe multiple times.</li>
+            <li class="mb-2">✔ Send High-Quality Traffic to Your Site</li>
+            <li>✔ All plans are auto renewal upon exhaustion or expirations.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Lower Content -->
+      <div class="row gy-4">
+        <!-- Left Block -->
+        <div class="col-lg-6">
+          <div class=" p-4 rounded text-center">
+            <h3 class="mb-3">Terms & Conditions</h3>
+            <p class="text-muted mb-4">
+              Updated information about fees and charges, current plans and promotions, charging blocks and charging order will be published in the Cellcard website (www.cellcard.com.kh) and supersedes all other rates at the time of subscription and previous written agreements.
+            </p>
+            <a style="color: #fff ;" href="#" class="btn btn-Contact">Contact Us →</a>
+          </div>
+        </div>
+        <!-- Right Blocks -->
+        <div class="col-lg-6">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="card p-3 h-100">
+                <h5>Upsize your Social Life with Social Pack!</h5>
+                <p class="text-muted">Upsize your Social Life with Social Pack Add-On! Enjoy a dedicated data pack for your all of your favorite Social Media Apps!</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card p-3 h-100">
+                <h5>HYBRID EXECUTIVE PLANS</h5>
+                <p class="text-muted">Hybrid Executive Plans – Corporate plans for your business and your employees with flexibility and better control</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div style="background-color:rgb(235, 161, 0) ;" class="card p-3 h-100  text-white">
+                <h5 style="color: #fff;">We do Business as for Ourselves</h5>
+                <p style="color: #fff;">Indignation and dislike men who are so beguiled.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card p-3 h-100">
+                <h5>We are Experts in the Field</h5>
+                <p class="text-muted">Indignation and dislike men who are so beguiled.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trusted-companies py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>Companies that Trusted us and Got a High Profit</h2>
+        <p>Find out more about our projects</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <img src="./assets/img/img8.jpg" class="card-img-top" alt="Enterprise">
+            <div class="card-body">
+              <h6 class="card-title">Cellcard App</h6>
+              <p class="card-text">Is our enterprise client, and look at the profit they got</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <img src="./assets/img/img9.jpg" class="card-img-top" alt="Individual">
+            <div class="card-body">
+              <h6 class="card-title">Cellard Plans</h6>
+              <p class="card-text">Is our enterprise client, and look at the profit they got</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <img src="./assets/img/img12.jpg" class="card-img-top" alt="Enterprise">
+            <div class="card-body">
+              <h6 class="card-title">Data Sim</h6>
+              <p class="card-text">Is our enterprise client, and look at the profit they got</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="#" class="btn btn-Contact">See all work →</a>
+      </div>
+    </div>
+  </section>
+
+  <!--Download-->
+    <!--Feature icon-->
+    <section style="padding-top: 30px;">
+      <div class="auto-container">
+        <div class="row">
+            <div class="col-lg-6 col-md-8 col-12 text-center mx-auto mb-5">
+                    <h4 style="color: #555; font-size: 16px;">Download</h4>
+                    <div style="color: #555; font-weight: 400; font-size: 24px;" class="dec">Cellcard app is available to download free on iOS and Android</div>
+            </div>
+        </div>
+          <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <img src="./assets/img/apple.png" class="img-fluid" alt="...">
+              </div>
+              <div class="col">
+                <img src="./assets/img/googleplay.png" class="img-fluid" alt="...">
+              </div>
+              <div class="col">
+                <img src="./assets/img/appGallary.png" class="img-fluid" alt="...">
+              </div>
+            </div>
+          </div>
+      </div>
     </section>
+  <!--Testimonial-->
+  <section class="sec">
+    <div class="testimonial-container">
+      <div class="progress-bar"></div>
+      <div class="fas fa-quote-right fa-quote"></div>
+      <div class="fas fa-quote-left fa-quote"></div>
+      <p class="testimonial">
+        I've worked with literally hundreds of HTML/CSS developers and I have to
+        say the top spot goes to this guy. This guy is an amazing developer. He
+        stresses on good, clean code and pays heed to the details. I love
+        developers who respect each and every aspect of a throughly thought out
+        design and do their best to put it in code. He goes over and beyond and
+        transforms ART into PIXELS - without a glitch, every time.
+      </p>
+      <div class="user">
+        <img
+          src="https://randomuser.me/api/portraits/women/46.jpg"
+          alt="user"
+          class="user-image"
+        />
+        <div class="user-details">
+          <h4 class="username">Miyah Myles</h4>
+          <p class="role">Marketing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main><!-- End #main -->
 
-    <!--Footer-->
-    <footer></footer>
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      <strong><span>CtaAdmin</span></strong>. 
+    </div>
+  </footer><!-- End Footer -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./src/script/footer.js"></script>  
-    <script src="./src/script/home.js"></script>
-    <script src="./src/script/header.js"></script>
-  </body>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="./src/script/main.js"></script>
+  <script src="./src/script/home.js"></script>
+</body>
+
 </html>

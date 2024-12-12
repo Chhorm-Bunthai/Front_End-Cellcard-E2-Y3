@@ -9,6 +9,8 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #222;
   height: 100%;
+  scroll-behavior: smooth;
+  padding-bottom: 3rem;
 }
 a {
   text-decoration: none !important;
@@ -20,6 +22,15 @@ a {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px; 
+  z-index: 1000;
+} */
 
 .navbar-brand img {
   width: 100%;
@@ -82,16 +93,538 @@ a {
   background-color: rgb(235, 161, 0);
   color: #fff;
 }
+/* End Navbar Styles */
+
+/* ----------------------------------------------- */
+
+/* banner Styles */
+.container .row .col-15 .b_headline1 {
+  text-align: center;
+  color: #0C0C0D;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 4rem;
+  letter-spacing: 0px;
+  font-family: "Inter", sans-serif;
+}
+.container .row .col-15 .b_headline2 {
+  text-align: center;
+  color: #555;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 2rem;
+  letter-spacing: 0;
+  width: 560px;
+  
+
+}
+button {
+  background-color: rgb(235, 161, 0);
+  color: #fff;
+  border: 1px rgb(235, 161, 0) solid;
+  border-radius: 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px 30px;
+  overflow: hidden;
+  margin: 10px 0;
+  position: relative;
+}
+
+button:focus {
+  outline: none;
+}
+
+button .circle {
+  position: absolute;
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: scale 0.5s ease-out;
+}
+
+@keyframes scale {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
+
+.sec_info {
+  margin-top: 20rem;
+  margin-bottom: 10rem;
+}
+.sec_info .auto-container .row .col-lg-6 .dec {
+  font-size: 38px;
+  font-weight: 400;
+  color: #555;
+}
+
+.sec_info .auto-container .container .row .col img{
+  width: 120px;
+  height: auto;
+}
+
+.sec_certi .container .row .certi_h1 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+/* Pricing Section */
+.pricing-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.pricing-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.pricing-section p {
+  font-size: 16px;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+/* Pricing Container */
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Pricing Card */
+.pricing-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 320px;
+  text-align: left;
+}
+
+.pricing-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.pricing-card .price {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: rgb(235, 161, 0);
+}
+
+.pricing-card .price span {
+  font-size: 24px;
+  vertical-align: top;
+}
+
+.pricing-card .description {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.pricing-card .features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.pricing-card .features li {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.pricing-card .features li small {
+  display: block;
+  color: #999;
+  margin-top: 5px;
+}
+
+.pricing-card .btn {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.pricing-card .btn:hover {
+  background: #555;
+}
+
+/* Custom Styles for Packages */
+.pricing-card.standard {
+  background: #fef6e4;
+}
+
+.pricing-card.pro {
+  background: #333;
+  color: #fff;
+}
+
+.pricing-card.pro .btn {
+  background: #ffcc00;
+  color: #333;
+}
+
+.pricing-card.pro .btn:hover {
+  background: #e6b800;
+}
+
+/* Process Section */
+.process-section {
+  padding: 50px 20px;
+  background-image: url(../assets/Rectangle-6.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* Process Section */
+.process-section h2 {
+  font-size: 1.8rem;
+}
+
+.process-section ul {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card.bg-dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.card.bg-dark p {
+  color: #ccc;
+}
+
+.btn-Contact{
+  background: rgb(235, 161, 0) ;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+/* Upper Content */
+.content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.image-area img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.text-area {
+  max-width: 500px;
+}
+
+.text-area h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.text-area p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.text-area .features {
+  list-style: none;
+  padding: 0;
+}
+
+.text-area .features li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Lower Content */
+.lower-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.text-block {
+  text-align: center;
+}
+
+.text-block h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.text-block p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+
+.text-block .btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.text-block .btn:hover {
+  background: #333;
+}
+
+/* Cards Section */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.card h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Dark Card */
+.card.dark {
+  background: #000;
+  color: #fff;
+}
+
+.card.dark p {
+  color: #ccc;
+}
+
+
+.sec_certi .container {
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  padding-left: 5rem;
+}
+.sec_certi .container .row .def {
+  justify-content: center;
+}
+
+
+.sec_certi {
+  background-color: #FFF4E0;
+}
+
+.icon img {
+  width: 50px;
+  height: 50px;
+}
+
+p {
+  font-size: 0.95rem;
+}
+
+a {
+  color: #000;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #007bff;
+}
+
+
+.section_elementor h1 {
+  text-align: center;
+}
+
+
+.section_elementor {
+  border-radius: #FFFFFF;
+  background-image: url(./assets/img/Rectangle-6.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-color: #FFFFFF;
+  transition: 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-bottom: 0px;
+  padding: 120px 20px 0px 20px;
+  height: 600px;
+  width: 100%;
+
+}
+
+
+/* ads card */
+.trusted-companies {
+  background-color: #fef6e4; 
+}
+
+.trusted-companies h2 {
+  font-weight: bold;
+}
+
+.trusted-companies p {
+  color: #6c757d; 
+}
+
+.trusted-companies .card {
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.trusted-companies .card h6 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.trusted-companies .btn-dark {
+  background-color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.fw-bold {
+  color: rgb(235, 161, 0);
+}
+
+
+
+
+
+/*Testimonial*/
+
+.testimonial-container {
+  background-color: rgb(235, 161, 0);
+  color: #fff;
+  border-radius: 15px;
+  margin: 20px auto;
+  padding: 50px 80px;
+  max-width: 768px;
+  position: relative;
+}
+
+.fa-quote {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 28px;
+  position: absolute;
+  top: 70px;
+}
+.fas:before{color: rgb(219, 53, 155) !important;}
+
+.fa-quote-right {
+  left: 40px;
+}
+
+.fa-quote-left {
+  right: 40px;
+}
+
+.testimonial {
+  line-height: 28px;
+  text-align: justify;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user .user-image {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  object-fit: cover;
+}
+
+.user .user-details {
+  margin-left: 10px;
+}
+
+.user .username {
+  margin: 0;
+}
+
+.user .role {
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  background-color: #fff;
+  height: 4px;
+  width: 100%;
+  animation: grow 10s linear infinite;
+  transform-origin: left;
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-container {
+    padding: 20px 30px;
+  }
+
+  .fa-quote {
+    display: none;
+  }
+}
+
+
+
 /* ----------------------------------------------- */
 
 /* Footer Styles */
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
+
 
 .footer-48201 {
   padding: 2rem 0;
