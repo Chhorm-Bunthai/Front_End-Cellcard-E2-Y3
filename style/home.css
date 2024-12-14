@@ -100,7 +100,7 @@ a {
 /* banner Styles */
 .container .row .col-15 .b_headline1 {
   text-align: center;
-  color: #0C0C0D;
+  color: #0c0c0d;
   font-size: 64px;
   font-weight: 600;
   line-height: 4rem;
@@ -116,8 +116,6 @@ a {
   line-height: 2rem;
   letter-spacing: 0;
   width: 560px;
-  
-
 }
 button {
   background-color: rgb(235, 161, 0);
@@ -164,7 +162,7 @@ button .circle {
   color: #555;
 }
 
-.sec_info .auto-container .container .row .col img{
+.sec_info .auto-container .container .row .col img {
   width: 120px;
   height: auto;
 }
@@ -320,8 +318,8 @@ button .circle {
   color: #ccc;
 }
 
-.btn-Contact{
-  background: rgb(235, 161, 0) ;
+.btn-Contact {
+  background: rgb(235, 161, 0);
   color: #000;
   border: none;
   padding: 10px 20px;
@@ -391,7 +389,6 @@ button .circle {
   color: #666;
 }
 
-
 .text-block .btn {
   background: #000;
   color: #fff;
@@ -441,7 +438,6 @@ button .circle {
   color: #ccc;
 }
 
-
 .sec_certi .container {
   margin-right: auto;
   margin-left: auto;
@@ -452,9 +448,8 @@ button .circle {
   justify-content: center;
 }
 
-
 .sec_certi {
-  background-color: #FFF4E0;
+  background-color: #fff4e0;
 }
 
 .icon img {
@@ -475,31 +470,27 @@ a:hover {
   color: #007bff;
 }
 
-
 .section_elementor h1 {
   text-align: center;
 }
 
-
 .section_elementor {
-  border-radius: #FFFFFF;
+  border-radius: #ffffff;
   background-image: url(./assets/img/Rectangle-6.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-color: #FFFFFF;
+  border-color: #ffffff;
   transition: 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
   margin-bottom: 0px;
   padding: 120px 20px 0px 20px;
   height: 600px;
   width: 100%;
-
 }
-
 
 /* ads card */
 .trusted-companies {
-  background-color: #fef6e4; 
+  background-color: #fef6e4;
 }
 
 .trusted-companies h2 {
@@ -507,7 +498,7 @@ a:hover {
 }
 
 .trusted-companies p {
-  color: #6c757d; 
+  color: #6c757d;
 }
 
 .trusted-companies .card {
@@ -531,10 +522,6 @@ a:hover {
   color: rgb(235, 161, 0);
 }
 
-
-
-
-
 /*Testimonial*/
 
 .testimonial-container {
@@ -553,7 +540,9 @@ a:hover {
   position: absolute;
   top: 70px;
 }
-.fas:before{color: rgb(219, 53, 155) !important;}
+.fas:before {
+  color: rgb(219, 53, 155) !important;
+}
 
 .fa-quote-right {
   left: 40px;
@@ -618,13 +607,9 @@ a:hover {
   }
 }
 
-
-
 /* ----------------------------------------------- */
 
 /* Footer Styles */
-
-
 
 .footer-48201 {
   padding: 2rem 0;
