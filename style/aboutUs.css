@@ -7,7 +7,7 @@
 .card-body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-grow: 1;
 }
 
@@ -15,4 +15,24 @@
   object-fit: cover;
   height: 500px;
   width: 100%;
+}
+
+.member-name {
+  font-size: 1.5rem; /* Larger font for name */
+  font-weight: bold; /* Bold name */
+}
+
+.member-role {
+  font-size: 1.2rem; /* Medium font for roles */
+  text-transform: uppercase; /* Role in uppercase */
+  color: #6c757d; /* Muted color */
+}
+
+.member-description {
+  font-size: 1rem; /* Smaller font for description */
+  color: #6c757d; /* Muted color */
+}
+
+.position {
+  font-size: 18px;
 }
