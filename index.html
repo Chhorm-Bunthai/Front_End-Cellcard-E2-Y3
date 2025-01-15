@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Cellcard App</title>
+    <title>Guideline Cellcard App </title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -34,7 +34,11 @@
     <!-- Main CSS File -->
     <link href="./style/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="./style/home.css" />
+
+   
   </head>
+  
+
 
   <body>
     <!-- ======= Header ======= -->
@@ -254,192 +258,141 @@
 
     <!-- ======= Sidebar ======= -->
     <aside id="sidebar" class="sidebar">
+
       <ul class="sidebar-nav" id="sidebar-nav">
+  
         <li class="nav-item">
-          <a class="nav-link" href="./index.html">
+          <a class="nav-link collapsed" data-bs-target="#dashboard-nav" data-bs-toggle="collapse" href="./index.html">
             <i class="bi bi-grid"></i>
-            <span>Cellcard OverView</span>
+            <span>Cellcard Overview</span><i class="bi bi-chevron-down ms-auto"></i>
           </a>
-        </li>
-
-        <!-- End Dashboard Nav -->
-
-        <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            data-bs-target="#components-nav"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-            <i class="ri-install-line"></i><span>Installment</span
-            ><i class="bi bi-chevron-down ms-auto"></i>
-          </a>
-          <ul
-            id="components-nav"
-            class="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
+          <ul id="dashboard-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
             <li>
-              <a href="#">
+              <a href="./index.html">
+                <i class="bi bi-circle"></i><span>Dashboard</span>
+              </a>
+            </li>
+          </ul>
+        </li><!-- End Dashboard Nav -->
+  
+        <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+            <i class="bi bi-menu-button-wide"></i><span>Installment</span><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li>
+              <a href="src/pages/downloadPage.html">
                 <i class="bi bi-circle"></i><span>Download</span>
               </a>
             </li>
             <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>Rigister</span>
+              <a href="src/pages/loginPage.html">
+                <i class="bi bi-circle"></i><span>Login</span>
               </a>
             </li>
             <li>
-              <a href="#"> <i class="bi bi-circle"></i><span>Login</span> </a>
+              <a href="src/pages/registerPage.html">
+                <i class="bi bi-circle"></i><span>Register</span>
+              </a>
             </li>
+            
           </ul>
-        </li>
-        <!-- End Components Nav -->
-
+        </li><!-- End Components Nav -->
+  
         <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            data-bs-target="#forms-nav"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-            <i class="bi bi-journal-text"></i><span>View Plan</span
-            ><i class="bi bi-chevron-down ms-auto"></i>
+          <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+            <i class="bi bi-journal-text"></i><span>View Plan</span><i class="bi bi-chevron-down ms-auto"></i>
           </a>
-          <ul
-            id="forms-nav"
-            class="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
+          <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
             <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>Check Balance</span>
+              <a href="src/pages/checkBalancePage.html">
+                <i class="bi bi-circle"></i><span>Check Balance & Subscription</span>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <i class="bi bi-circle"></i><span>Subscription</span>
-              </a>
-            </li>
+            
           </ul>
-        </li>
-        <!-- End Forms Nav -->
-
+        </li><!-- End Forms Nav -->
+  
         <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            data-bs-target="#tables-nav"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-            <i class="bi bi-layout-text-window-reverse"></i><span>Top Up</span
-            ><i class="bi bi-chevron-down ms-auto"></i>
+          <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+            <i class="bi bi-layout-text-window-reverse"></i><span>Top Up</span><i class="bi bi-chevron-down ms-auto"></i>
           </a>
-          <ul
-            id="tables-nav"
-            class="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
+          <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
             <li>
-              <a href="./src/pages/topupForOwnnumber.html">
-                <i class="bi bi-circle"></i><span>Top Up for own number</span>
+              <a href="src/pages/topupForOwnnumber.html">
+                <i class="bi bi-circle"></i><span>Top Up for Own number</span>
               </a>
             </li>
             <li>
-              <a href="./src/pages/topupForOtherNumber.html">
-                <i class="bi bi-circle"></i><span>Top Up for other number</span>
+              <a href="src/pages/topupForOtherNumber.html">
+                <i class="bi bi-circle"></i><span>Top Up for Other number</span>
               </a>
             </li>
-
             <li>
-              <a href="./src/pages/scheduleForTopup.html">
-                <i class="bi bi-circle"></i><span>Schedule for top up</span>
+              <a href="src/pages/scheduleForTopup.html">
+                <i class="bi bi-circle"></i><span>Scheduled Top</span>
               </a>
             </li>
           </ul>
-        </li>
-        <!-- End Tables Nav -->
+        </li><!-- End Tables Nav -->
 
+  
         <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            data-bs-target="#charts-nav"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-            <i class="bi-clock"></i><span>Usage Histroy</span
-            ><i class="bi bi-chevron-down ms-auto"></i>
+          <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+            <i class="bi-clock"></i><span>Usage History</span><i class="bi bi-chevron-down ms-auto"></i>
           </a>
-          <ul
-            id="charts-nav"
-            class="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
+          <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
             <li>
-              <a href="./src/pages/usageTransaction.html">
-                <i class="bi bi-circle"></i><span>Usage Transactions</span>
+              <a href="./src/pages/usagetransaction.html">
+                <i class="bi bi-circle"></i><span>Usage Transection</span>
               </a>
             </li>
+           
           </ul>
         </li>
+        <!-- New Nav Item 1 -->
+<li class="nav-item">
+  <a class="nav-link collapsed" data-bs-target="#new-section-nav" data-bs-toggle="collapse" href="#">
+    <i class="bi-person-circle"></i><span>Account</span><i class="bi bi-chevron-down ms-auto"></i>
+  </a>
+  <ul id="new-section-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+    <li>
+      <a href="./src/pages/manageAccount.html">
+        <i class="bi bi-circle"></i><span>Manage Accounts</span>
+      </a>
+    </li>
 
-        <!-- Acconut Management Section -->
-        <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            data-bs-target="#charts-nav"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-            <i class="bi-person-circle"></i><span>Account</span
-            ><i class="bi bi-chevron-down ms-auto"></i>
-          </a>
-          <ul
-            id="charts-nav"
-            class="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
-            <li>
-              <a href="./src/pages/manageAccount.html">
-                <i class="bi bi-circle"></i><span>Manage Accounts</span>
-              </a>
-            </li>
-          </ul>
-        </li>
+  </ul>
+</li><!-- End New Nav Item 1 -->
 
+<!-- New Nav Item 2 -->
+<li class="nav-item">
+  <a class="nav-link collapsed" data-bs-target="#another-section-nav" data-bs-toggle="collapse" href="#">
+    <i class="ri-customer-service-2-line"></i><span>Customer Support</span><i class="bi bi-chevron-down ms-auto"></i>
+  </a>
+  <ul id="another-section-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+    <li>
+      <a href="./src/pages/chatbotPage.html">
+        <i class="bi bi-circle"></i><span>Chat Bot</span>
+      </a>
+    </li>
+
+  </ul>
+</li><!-- End New Nav Item 2 -->
+    <!-- End Icons Nav -->
+  
+        <li class="nav-heading">Teamwork</li>
+  
         <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            data-bs-target="#icons-nav"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-            <i class="ri-customer-service-2-line"></i
-            ><span>Customer Support</span
-            ><i class="bi bi-chevron-down ms-auto"></i>
-          </a>
-          <ul
-            id="icons-nav"
-            class="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
-            <li>
-              <a href="./src/pages/chatbotPage.html">
-                <i class="bi bi-circle"></i><span>Chat Bot</span>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./src/pages/aboutUs.html">
-            <i class="bi bi-person-lines-fill"></i>
+          <a class="nav-link collapsed" href="./src/pages/aboutUs.html">
+            <i class="bi bi-person"></i>
             <span>About Us</span>
           </a>
-        </li>
-
-        <!-- End Icons Nav -->
+        </li><!-- End Profile Page Nav -->
+  
       </ul>
-    </aside>
+  
+    </aside><!-- End Sidebar-->
 
     <!-- End Sidebar-->
 
@@ -737,7 +690,7 @@
             </div>
           </div>
           <div class="text-center mt-5">
-            <a href="#" class="btn btn-Contact">See all work →</a>
+            <a style="color: white;" href="#" class="btn btn-Contact">See all work →</a>
           </div>
         </div>
       </section>
@@ -787,27 +740,24 @@
           <div class="fas fa-quote-right fa-quote"></div>
           <div class="fas fa-quote-left fa-quote"></div>
           <p class="testimonial">
-            I've worked with literally hundreds of HTML/CSS developers and I
-            have to say the top spot goes to this guy. This guy is an amazing
-            developer. He stresses on good, clean code and pays heed to the
-            details. I love developers who respect each and every aspect of a
-            throughly thought out design and do their best to put it in code. He
-            goes over and beyond and transforms ART into PIXELS - without a
-            glitch, every time.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum cumque repellendus laudantium nulla laboriosam magni distinctio atque optio temporibus, hic vel officia, adipisci debitis eligendi vero corporis sint at molestiae.
           </p>
           <div class="user">
             <img
-              src="https://randomuser.me/api/portraits/women/46.jpg"
+              src="assets/about_us/chetra.jpg"
               alt="user"
               class="user-image"
             />
             <div class="user-details">
-              <h4 class="username">Miyah Myles</h4>
-              <p class="role">Marketing</p>
+              <h4 class="username">Pang Chetra</h4>
+              <p class="role">Student</p>
             </div>
           </div>
         </div>
       </section>
+
+
+
     </main>
     <!-- End #main -->
 

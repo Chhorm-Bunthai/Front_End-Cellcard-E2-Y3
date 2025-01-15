@@ -1,90 +1,505 @@
-<!DOCTYPE >
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Schedule Top Up</title>
-    <meta http-equiv="Content-Type" content="charset=utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes"
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Cellcard App</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="../../assets/img/faviconCellcard.png" rel="icon" />
+    <link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
     />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="../../assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="../../assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="../../style/style.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="../../style/home.css" /> -->
+
+    <!-- Bind -->
     <link rel="stylesheet" href="../../style/topupForOwnnumber.css" />
-    <meta property="og:title" content="របៀប​ចុះឈ្មោះប្រើ អេស៊ីលីដាម៉ូបាល" />
+    <style>
+      
+    </style>
   </head>
+
   <body>
-    <div class="content" style="max-width: 700px; font-size: 90%">
-      <h1 style="text-align: center">របៀបបញ្ចូលទឹកប្រាក់ដោយកាលកំណត់</h1>
-
-      <div class="container">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/3i0JH3fd11o?si=PhidUItFRfltWeLL"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="./index.html" class="logo d-flex align-items-center">
+          <img src="../../assets/img/logo-for-reach-02-1.png" alt="cellcard_logo" />
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
       </div>
+      <!-- End Logo -->
 
-      <table cellpadding="0" cellspacing="0">
-        <tr>
-          <td class="old" width="55%">
-            <ol>
-              <li>1.សូមចុចលើពាក្យ ​"<strong>បញ្ចូលលុយ</strong>"</li>
-            </ol>
-          </td>
-          <td style="padding-left: 0">
-            <img src="../../assets/img/topupForOwnnumber/img3.jpg" />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            2. សូមចុចលើពាក្យ "<strong>សម្រាប់លេីលេខទូរស័ព្ទរបស់ខ្ញុំ</strong>"
-          </td>
-          <td style="padding-left: 0">
-            <img src="../../assets/img/topupForOwnnumber/img1.jpg" />
-          </td>
-        </tr>
-        <tr class="old">
-          <td>3. ជ្រើសរើសធនាគារដែលយេីងចង់បង់ប្រាក់</td>
-          <td style="padding-left: 0">
-            <img src="../../assets/img/topupForOwnnumber/img4.jpg" />
-          </td>
-        </tr>
-        <tr>
-          <td>4.សូមចុច​ រឺ​ វាយបញ្ចូលចំនួនទឹកប្រាក់</td>
-          <td style="padding-left: 0">
-            <img src="../../assets/img/topupForOwnnumber/img5.jpg" />
-          </td>
-        </tr>
-        <tr>
-          <td>5. ចុចលើពាក្យ "<strong>បញ្ចូលលុយ</strong>"</td>
-          <td style="padding-left: 0">
-            <img src="../../assets/img/topupForOwnnumber/img8.jpg" />
-          </td>
-        </tr>
-        <tr>
-          <td>6. ចុចលើពាក្យ "<strong>បញ្ជាក់</strong>"</td>
-          <td style="padding-left: 0">
-            <img src="../../assets/img/topupForOwnnumber/img2.jpg" />
-          </td>
-        </tr>
+      <div class="search-bar">
+        <form
+          class="search-form d-flex align-items-center"
+          method="POST"
+          action="#"
+        >
+          <input
+            type="text"
+            name="query"
+            placeholder="Search"
+            title="Enter search keyword"
+          />
+          <button type="submit" title="Search">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>
+      <!-- End Search Bar -->
 
-        <tr class="old">
-          <td>7.ចុចលើពាក្យ "<strong>Open</strong>"</td>
-          <td style="padding-left: 0">
-            <img src="../../assets/img/topupForOwnnumber/img7.jpg" />
-          </td>
-        </tr>
-        <tr>
-          <td>8.ចុចលើពាក្យ "<strong>បង់ឥឡូវនេះ</strong>"</td>
-          <td style="padding-left: 0">
-            <img src="../../assets/img/topupForOwnnumber/img6.jpg" />
-          </td>
-        </tr>
-      </table>
-    </div>
-    <!-- end content -->
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+          <!-- End Search Icon-->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+              <i class="bi bi-bell"></i>
+              <span class="badge bg-primary badge-number">4</span> </a
+            ><!-- End Notification Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications"
+            >
+              <li class="dropdown-header">
+                You have 4 new notifications
+                <a href="#"
+                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                    >View all</span
+                  ></a
+                >
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-exclamation-circle text-warning"></i>
+                <div>
+                  <h4>Lorem Ipsum</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>30 min. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-x-circle text-danger"></i>
+                <div>
+                  <h4>Atque rerum nesciunt</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>1 hr. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-check-circle text-success"></i>
+                <div>
+                  <h4>Sit rerum fuga</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>2 hrs. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-info-circle text-primary"></i>
+                <div>
+                  <h4>Dicta reprehenderit</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li class="dropdown-footer">
+                <a href="#">Show all notifications</a>
+              </li>
+            </ul>
+            <!-- End Notification Dropdown Items -->
+          </li>
+          <!-- End Notification Nav -->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+              <i class="bi bi-chat-left-text"></i>
+              <span class="badge bg-success badge-number">3</span> </a
+            ><!-- End Messages Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages"
+            >
+              <li class="dropdown-header">
+                You have 3 new messages
+                <a href="#"
+                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                    >View all</span
+                  ></a
+                >
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img
+                    src="assets/img/messages-1.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <div>
+                    <h4>Maria Hudson</h4>
+                    <p>
+                      Velit asperiores et ducimus soluta repudiandae labore
+                      officia est ut...
+                    </p>
+                    <p>4 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img
+                    src="assets/img/messages-2.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <div>
+                    <h4>Anna Nelson</h4>
+                    <p>
+                      Velit asperiores et ducimus soluta repudiandae labore
+                      officia est ut...
+                    </p>
+                    <p>6 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img
+                    src="assets/img/messages-3.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <div>
+                    <h4>David Muldon</h4>
+                    <p>
+                      Velit asperiores et ducimus soluta repudiandae labore
+                      officia est ut...
+                    </p>
+                    <p>8 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="dropdown-footer">
+                <a href="#">Show all messages</a>
+              </li>
+            </ul>
+            <!-- End Messages Dropdown Items -->
+          </li>
+          <!-- End Messages Nav -->
+        </ul>
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
+
+     <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#dashboard-nav" data-bs-toggle="collapse" href="./index.html">
+          <i class="bi bi-grid"></i>
+          <span>Cellcard Overview</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="dashboard-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="../../index.html">
+              <i class="bi bi-circle"></i><span>Dashboard</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>Installment</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="./downloadPage.html">
+              <i class="bi bi-circle"></i><span>Download</span>
+            </a>
+          </li>
+          <li>
+            <a href="./loginPage.html">
+              <i class="bi bi-circle"></i><span>Login</span>
+            </a>
+          </li>
+          <li>
+            <a href="./registerPage.html">
+              <i class="bi bi-circle"></i><span>Register</span>
+            </a>
+          </li>
+          
+        </ul>
+      </li><!-- End Components Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-journal-text"></i><span>View Plan</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="./checkBalancePage.html">
+              <i class="bi bi-circle"></i><span>Check Balance & Subscription</span>
+            </a>
+          </li>
+          
+        </ul>
+      </li><!-- End Forms Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-layout-text-window-reverse"></i><span>Top Up</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="./topupForOwnnumber.html">
+              <i class="bi bi-circle"></i><span>Top Up for Own number</span>
+            </a>
+          </li>
+          <li>
+            <a href="./topupForOtherNumber.html">
+              <i class="bi bi-circle"></i><span>Top Up for Other number</span>
+            </a>
+          </li>
+          <li>
+            <a href="./scheduleForTopup.html">
+              <i class="bi bi-circle"></i><span>Scheduled Top</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Tables Nav -->
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi-clock"></i><span>Usage History</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="./usagetransaction.html">
+              <i class="bi bi-circle"></i><span>Usage Transection</span>
+            </a>
+          </li>
+         
+        </ul>
+      </li>
+      <!-- New Nav Item 1 -->
+<li class="nav-item">
+<a class="nav-link collapsed" data-bs-target="#new-section-nav" data-bs-toggle="collapse" href="#">
+  <i class="bi-person-circle"></i><span>Account</span><i class="bi bi-chevron-down ms-auto"></i>
+</a>
+<ul id="new-section-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+  <li>
+    <a href="./manageAccount.html">
+      <i class="bi bi-circle"></i><span>Manage Accounts</span>
+    </a>
+  </li>
+
+</ul>
+</li><!-- End New Nav Item 1 -->
+
+<!-- New Nav Item 2 -->
+<li class="nav-item">
+<a class="nav-link collapsed" data-bs-target="#another-section-nav" data-bs-toggle="collapse" href="#">
+  <i class="ri-customer-service-2-line"></i><span>Customer Support</span><i class="bi bi-chevron-down ms-auto"></i>
+</a>
+<ul id="another-section-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+  <li>
+    <a href="./chatbotPage.html">
+      <i class="bi bi-circle"></i><span>Chat Bot</span>
+    </a>
+  </li>
+
+</ul>
+</li><!-- End New Nav Item 2 -->
+  <!-- End Icons Nav -->
+
+      <li class="nav-heading">Teamwork</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./aboutUs.html">
+          <i class="bi bi-person"></i>
+          <span>About Us</span>
+        </a>
+      </li><!-- End Profile Page Nav -->
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+    <!-- End Sidebar-->
+
+    <main id="main" class="main">
+      <section style="text-align: center;">
+        <div class="content">
+          <h1 style="text-align: center">របៀបបញ្ចូលទឹកប្រាក់ដោយកាលកំណត់</h1>
+    
+          <div class="container">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/3i0JH3fd11o?si=PhidUItFRfltWeLL"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+    
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td class="old" width="55%">
+                <ol>
+                  <li>1.សូមចុចលើពាក្យ ​"<strong>បញ្ចូលលុយ</strong>"</li>
+                </ol>
+              </td>
+              <td style="padding-left: 0">
+                <img src="../../assets/img/topupForOwnnumber/img3.jpg" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                2. សូមចុចលើពាក្យ "<strong>សម្រាប់លេីលេខទូរស័ព្ទរបស់ខ្ញុំ</strong>"
+              </td>
+              <td style="padding-left: 0">
+                <img src="../../assets/img/topupForOwnnumber/img1.jpg" />
+              </td>
+            </tr>
+            <tr class="old">
+              <td>3. ជ្រើសរើសធនាគារដែលយេីងចង់បង់ប្រាក់</td>
+              <td style="padding-left: 0">
+                <img src="../../assets/img/topupForOwnnumber/img4.jpg" />
+              </td>
+            </tr>
+            <tr>
+              <td>4.សូមចុច​ រឺ​ វាយបញ្ចូលចំនួនទឹកប្រាក់</td>
+              <td style="padding-left: 0">
+                <img src="../../assets/img/topupForOwnnumber/img5.jpg" />
+              </td>
+            </tr>
+            <tr>
+              <td>5. ចុចលើពាក្យ "<strong>បញ្ចូលលុយ</strong>"</td>
+              <td style="padding-left: 0">
+                <img src="../../assets/img/topupForOwnnumber/img8.jpg" />
+              </td>
+            </tr>
+            <tr>
+              <td>6. ចុចលើពាក្យ "<strong>បញ្ជាក់</strong>"</td>
+              <td style="padding-left: 0">
+                <img src="../../assets/img/topupForOwnnumber/img2.jpg" />
+              </td>
+            </tr>
+    
+            <tr class="old">
+              <td>7.ចុចលើពាក្យ "<strong>Open</strong>"</td>
+              <td style="padding-left: 0">
+                <img src="../../assets/img/topupForOwnnumber/img7.jpg" />
+              </td>
+            </tr>
+            <tr>
+              <td>8.ចុចលើពាក្យ "<strong>បង់ឥឡូវនេះ</strong>"</td>
+              <td style="padding-left: 0">
+                <img src="../../assets/img/topupForOwnnumber/img6.jpg" />
+              </td>
+            </tr>
+          </table>
+        </div>
+     
+      </section>
+
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="copyright">
+        <strong><span>CellCard Is 4G But My Heart Is 4 You</span></strong
+        >.
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <!-- Vendor JS Files -->
+    <script src="../../assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../../src/script/main.js"></script>
+    <script src="../../src/script/home.js"></script>
   </body>
 </html>

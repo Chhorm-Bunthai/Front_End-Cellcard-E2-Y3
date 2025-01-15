@@ -17,6 +17,13 @@ a {
   text-decoration: none;
 }
 
+.bg-primary {
+  background-color: rgb(235, 161, 0) !important;
+}
+.bg-success {
+  background-color: rgb(158, 7, 140) !important;;
+}
+
 a:hover {
   color: #717ff5;
   text-decoration: none;
