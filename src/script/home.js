@@ -44,48 +44,48 @@ const role = document.querySelector(".role");
 const testimonials = [
   {
     name: "Khoeun SreyNith",
-    position: "Marketing",
+    position: "Team Lead",
     photo:
       "../../assets/about_us/sreyneth.jpg",
-    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum cumque repellendus laudantium nulla laboriosam magni distinctio atque optio temporibus, hic vel officia, adipisci debitis eligendi vero corporis sint at molestiae.",
+    text: "កម្មវិធីនេះជួយអោយខ្ញុំតាមដានប្រើប្រាស់អីុនធឺណែត និងទឹកប្រាក់បានយ៉ាងងាយស្រួល។ ខ្ញុំអាចទិញផែនការថ្មីៗបានដោយមិនចាំបាច់ចេញទៅហាង។",
   },
   {
     name: "Chhorm Bunthai",
-    position: "Web Developer Apprentice",
+    position: "Member",
     photo:
       "../../assets/about_us/bunthai.jpg",
-    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum cumque repellendus laudantium nulla laboriosam magni distinctio atque optio temporibus, hic vel officia, adipisci debitis eligendi vero corporis sint at molestiae.",
+    text: "សេវាកម្មក្នុងកម្មវិធី Cellcard គឺលឿន និងប្រកបដោយប្រសិទ្ធភាព។ ខ្ញុំចូលចិត្តការផ្តល់ជូនពិសេសប្រចាំថ្ងៃ ដែលងាយស្រួលប្រើចូលទៅក្នុងកម្មវិធី។",
   },
   {
-    name: "Iida Niskanen",
-    position: "Data Entry",
-    photo: "https://randomuser.me/api/portraits/women/68.jpg",
-    text: "This guy is a hard worker. Communication was also very good with him and he was very responsive all the time, something not easy to find in many freelancers. We'll definitely repeat with him.",
+    name: "Nonvin",
+    position: "Member",
+    photo: "../../assets/about_us/nonvin.jpg",
+    text: "Cellcard App ជាសំរាប់អតិថិជនទំនើប។ ខ្ញុំអាចបង់ប្រាក់ និងត្រួតពិនិត្យសេវាកម្មផ្សេងៗបានក្នុងមួយចុចប៉ុណ្ណោះ។",
   },
   {
-    name: "Renee Sims",
-    position: "Receptionist",
-    photo: "https://randomuser.me/api/portraits/women/65.jpg",
-    text: "This guy does everything he can to get the job done and done right. This is the second time I've hired him, and I'll hire him again in the future.",
+    name: "ChungEy",
+    position: "Member",
+    photo: "../../assets/about_us/chungEy.jpg",
+    text:"ខ្ញុំស្រលាញ់ការរចនាកម្មវិធី Cellcard ដែលមានរូបរាងងាយស្រួល និងមិត្តភាព។ វាមានលក្ខណៈពិសេសថ្មីៗដែលជួយសន្សំសេវាកម្មបានយ៉ាងល្អ។",
   },
   {
-    name: "Jonathan Nunfiez",
-    position: "Graphic Designer",
-    photo: "https://randomuser.me/api/portraits/men/43.jpg",
-    text: "I had my concerns that due to a tight deadline this project can't be done. But this guy proved me wrong not only he delivered an outstanding work but he managed to deliver 1 day prior to the deadline. And when I asked for some revisions he made them in MINUTES. I'm looking forward to work with him again and I totally recommend him. Thanks again!",
+    name: "Lyeng",
+    position: "Member",
+    photo: "../../assets/about_us/Lyeng.jpg",
+    text: "Cellcard App គឺជាជម្រើសដ៏ល្អសម្រាប់អតិថិជន។ សេវាកម្មកាន់តែលឿន និងមានភាពងាយស្រួលក្នុងការទំនាក់ទំនងជាមួយក្រុមការងារគាំទ្រ។",
   },
   {
-    name: "Sasha Ho",
-    position: "Accountant",
+    name: "EntaPanha",
+    position: "Member",
     photo:
-      "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?h=350&auto=compress&cs=tinysrgb",
-    text: "This guy is a top notch designer and front end developer. He communicates well, works fast and produces quality work. We have been lucky to work with him!",
+      "../../assets/about_us/EntaPanha.jpg",
+    text:"កម្មវិធី Cellcard ជួយខ្ញុំដើម្បីបញ្ចូលកាត និងទិញសេវាកម្មបានយ៉ាងងាយស្រួល។ មិនចាំបាច់ចំណាយពេលអានលេខកូដយូរឡើយ។",
   },
   {
-    name: "Veeti Seppanen",
-    position: "Director",
-    photo: "https://randomuser.me/api/portraits/men/97.jpg",
-    text: "This guy is a young and talented IT professional, proactive and responsible, with a strong work ethic. He is very strong in PSD2HTML conversions and HTML/CSS technology. He is a quick learner, eager to learn new technologies. He is focused and has the good dynamics to achieve due dates and outstanding results.",
+    name: "Chorvorn",
+    position: "Member",
+    photo: "../../assets/about_us/chorvorn.jpg",
+    text:"ខ្ញុំមានអារម្មណ៍ស្រួលក្នុងការប្រើ Cellcard App ដោយសារវាមានការច្នៃប្រឌិតល្អ ហើយមានភាពស៊ីសង្វាក់ជាមួយសេវាកម្មផ្សេងៗទៀត។",
   },
 ];
 

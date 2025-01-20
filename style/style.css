@@ -17,6 +17,9 @@ a {
   text-decoration: none;
 }
 
+
+.List-txt {font-size: 20px;}
+
 .bg-primary {
   background-color: rgb(235, 161, 0) !important;
 }
